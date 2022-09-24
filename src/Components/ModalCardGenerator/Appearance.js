@@ -35,28 +35,28 @@ const Appearance = () => {
           Position
         </p>
 
-        <div className=' h-[55px] w-[82px] mt-[15px] '>
-          <button className=' w-[24px] h-[15px] mr-[5px] bg-[#DDDDDD] rounded-tl-md '></button>
-          <button className=' w-[24px] h-[15px] mr-[5px] bg-[#DDDDDD] '></button>
-          <button className=' w-[24px] h-[15px]  bg-[#DDDDDD] rounded-tr-md'></button>
-          <button className=' w-[24px] h-[15px] mr-[5px] bg-[#DDDDDD] '></button>
-          <button className=' w-[24px] h-[15px] mr-[5px] bg-[#DDDDDD] '></button>
-          <button className=' w-[24px] h-[15px]  bg-[#DDDDDD]  '></button>
-          <button className=' w-[24px] h-[15px] mr-[5px] bg-[#DDDDDD] rounded-bl-md '></button>
-          <button className=' w-[24px] h-[15px] mr-[5px] bg-[#DDDDDD] '></button>
-          <button className=' w-[24px] h-[15px]  bg-[#DDDDDD] rounded-br-md '></button>
+        <div className=' h-[55px]  w-[82px] mt-[15px] '>
+          <button className='  hover:bg-[#7D4AEA] w-[24px] h-[15px] mr-[5px] bg-[#DDDDDD] rounded-tl-md '></button>
+          <button className='  hover:bg-[#7D4AEA] w-[24px] h-[15px] mr-[5px] bg-[#DDDDDD] '></button>
+          <button className='  hover:bg-[#7D4AEA] w-[24px] h-[15px]  bg-[#DDDDDD] rounded-tr-md'></button>
+          <button className='  hover:bg-[#7D4AEA] w-[24px] h-[15px] mr-[5px] bg-[#DDDDDD] '></button>
+          <button className='  hover:bg-[#7D4AEA] w-[24px] h-[15px] mr-[5px] bg-[#DDDDDD] '></button>
+          <button className='  hover:bg-[#7D4AEA] w-[24px] h-[15px]  bg-[#DDDDDD]  '></button>
+          <button className='  hover:bg-[#7D4AEA] w-[24px] h-[15px] mr-[5px] bg-[#DDDDDD] rounded-bl-md '></button>
+          <button className='  hover:bg-[#7D4AEA] w-[24px] h-[15px] mr-[5px] bg-[#DDDDDD] '></button>
+          <button className='  hover:bg-[#7D4AEA] w-[24px] h-[15px]  bg-[#DDDDDD] rounded-br-md '></button>
         </div>
 
         <p className=' w-[28px] h-[18px] font-normal text-[14px] text-black mt-[30px]  '>
           Colors
         </p>
 
-        <div className=' mt-[15px]  flex flex-row  ' >
-          <div className=' w-[42px] h-[42px] rounded-md mr-[10px]  border-[#0000004D] border-2 bg-black ' />
-          <div className=' w-[42px] h-[42px] rounded-md mr-[10px] border-[#0000004D] border-2 bg-[#F37C34] ' />
-          <div className=' w-[42px] h-[42px] rounded-md mr-[10px] border-[#0000004D] border-2 bg-[#777777] ' />
-          <div className=' w-[42px] h-[42px] rounded-md mr-[10px] border-[#0000004D] border-2 bg-[#DDDDDD] ' />
-          <div className=' w-[42px] h-[42px] rounded-md mr-[10px] border-[#0000004D] border-2 bg-white ' />
+        <div className=' mt-[15px]   flex flex-row  ' >
+          <div className='  w-[42px] h-[42px] rounded-md mr-[10px]  border-[#0000004D] border-2 bg-black ' />
+          <div className='  w-[42px] h-[42px] rounded-md mr-[10px] border-[#0000004D] border-2 bg-[#F37C34] ' />
+          <div className='  w-[42px] h-[42px] rounded-md mr-[10px] border-[#0000004D] border-2 bg-[#777777] ' />
+          <div className='  w-[42px] h-[42px] rounded-md mr-[10px] border-[#0000004D] border-2 bg-[#DDDDDD] ' />
+          <div className='  w-[42px] h-[42px] rounded-md mr-[10px] border-[#0000004D] border-2 bg-white ' />
         </div>
 
         <p className=' w-[85px] h-[18px] font-normal text-[14px] text-black mt-[30px]  '>
