@@ -59,7 +59,6 @@ const MainText = () => {
                 w-[130px]
                 h-[16px]
                 ml-[12px]
-                font-Poppins
                 text-[13px]
                 font-normal
                 leading-[16px]
@@ -77,7 +76,6 @@ const MainText = () => {
                 w-[130px]
                 h-[16px]
                 ml-[12px]
-                font-Poppins
                 text-[13px]
                 font-normal
                 leading-[16px]
@@ -95,7 +93,6 @@ const MainText = () => {
                 w-[157px]
                 h-[16px]
                 ml-[12px]
-                font-Poppins
                 text-[13px]
                 font-normal
                 leading-[16px]

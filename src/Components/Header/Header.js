@@ -16,7 +16,6 @@ const Header = () => {
                     <Logo />
                 </div>
                 <div className='
-                font-Inter 
                 decoration-black 
                 not-italic 
                 text-[16px] 
@@ -31,7 +30,6 @@ const Header = () => {
             <div className='
             flex 
             flex-row
-            font-Inter 
             decoration-black 
             not-italic 
             text-[16px] 
@@ -49,7 +47,6 @@ const Header = () => {
             flex 
             flex-row 
             items-center
-            font-Inter 
             decoration-black 
             not-italic 
             text-[16px] 
@@ -66,8 +63,9 @@ const Header = () => {
                 ml-[30px]
                 justify-center
                 rounded-xl
-                shadow-[0_3px_7px_11px_rgba(124, 74, 234, 0.2)]
-                '>Try for free</button>
+                shadow-[0_3px_7px_11px_rgba(124, 74, 234, 0.2)]'>
+                    Try for free
+                </button>
             </div>
 
 
