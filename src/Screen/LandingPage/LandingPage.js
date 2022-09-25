@@ -4,6 +4,7 @@ import MainModalCard from '../../Components/MainModalCard/MainModalCard'
 import MainText from '../../Components/mainText/MainText'
 import Appearance from '../../Components/ModalCardGenerator/Appearance'
 import Content from '../../Components/ModalCardGenerator/Content'
+import Footer from '../../Components/ModalCardGenerator/Footer'
 import ModalCardGenerator from '../../Components/ModalCardGenerator/ModalCardGenerator'
 import SettingsandCode from '../../Components/ModalCardGenerator/SettingsandCode'
 
@@ -31,6 +32,10 @@ const LandingPage = () => {
                 <div className='w-[100%] pt-[23px] pl-[14.46%] pr-[14.46%]'>
                     <SettingsandCode/>
                 </div>
+                <div className='w-[100%] pt-[23px] pl-[14.46%] pr-[14.46%]'>
+                    <Footer/>
+                </div>
+
 
         </div>
     )
