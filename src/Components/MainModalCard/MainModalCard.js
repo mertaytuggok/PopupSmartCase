@@ -5,7 +5,7 @@ const MainModalCard = () => {
   return (
     <>
       <div className=' w-[800px] h-[468px] bg-white mt-[90px] rounded-[40px]'>
-        <div className=' pt-[45px]'>
+        <div className=' pt-[55px]'>
 
 
           <div className='ml-[147px]'>
@@ -40,7 +40,7 @@ const MainModalCard = () => {
 
       </div>
       <div>
-        <div className='flex flex-row'>
+        <div className='flex flex-row h-[225px]'>
           <p className='  flex flex-row w-[80px] h-[80px] font-semibold text-[72px] text-[#FFFFFF] mt-[120px] '>
             3x
           </p>
@@ -56,15 +56,15 @@ const MainModalCard = () => {
         </div>
 
 
-        <div className='flex flex-row'>
+        <div className='flex flex-row   '>
 
-          <p className=' flex  flex-row w-[119px] h-[44px] font-medium text-[16px] text-[#FFFFFF]
+          <p className=' flex  flex-row w-[119px]  h-[44px] font-medium text-[16px] text-[#FFFFFF]
         '>Increase Conversion Rate
           </p>
-          <p className='flex flex-row w-[87px] h-[44px] font-medium text-[16px] text-[#FFFFFF] ml-[120px] mr-[200px]  '>
+          <p className='flex flex-row w-[87px] h-[44px] font-medium text-[16px] text-[#FFFFFF] ml-[135px] mr-[200px]  '>
             Email Subscribers
           </p>
-          <p className=' flex flex-row w-[115px] h-[44px] font-medium text-[16px] text-[#FFFFFF] mr-[195px]'>
+          <p className=' flex flex-row w-[115px] h-[44px] font-medium text-[16px] text-[#FFFFFF] ml-[25px]'>
             More Customer Engagement
           </p>
 

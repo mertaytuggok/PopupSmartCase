@@ -69,7 +69,7 @@ const Appearance = () => {
             <Uploadsvg />
           </button>
 
-          <p className=' relative left-[72px] bottom-[20px] flex flex-row font-normal text-[14px] text-black  w-[230px] h-[18px] font-normal  '>
+          <p className=' relative left-[72px] bottom-[20px] flex flex-row font-normal text-[14px] text-black  w-[230px] h-[18px] '>
             <BiCloudUpload size={25} />
             Drop your image here or
             <button className='ml-[2px] flex flex-row text-[#7D4AEA] font-semibold underline decoration-[#7D4AEA]' >
@@ -84,7 +84,6 @@ const Appearance = () => {
 
       <div className=' absolute right-0 top-0  shadow-xl w-[740px] h-[405px] bg-white  rounded-[30px]'>
        
-
 
           <div className=' mt-[60px] ml-[135px]'>
             <p className=' w-[109px] h-[36px] font-semibold text-3xl '>

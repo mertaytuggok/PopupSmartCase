@@ -4,66 +4,28 @@ import Logo from '../../Assets/LogoSvg/Logo'
 
 const Header = () => {
     return (
-        <div className='
-        flex 
-        flex-row 
-        space-x-20
-        '>
-            <div className='
-            flex 
-            flex-row '>
+        
+        <div className=' flex  flex-row  space-x-20 '>
+            <div className='flex flex-row '>
                 <div>
                     <Logo />
                 </div>
-                <div className='
-                decoration-black 
-                not-italic 
-                text-[16px] 
-                font-extrabold 
-                leading-[18px]
-                ml-[10px]
-                mt-[9px]
-                tracking-tighter' >
+                <div className=' decoration-black  not-italic  text-[16px]  font-extrabold  leading-[18px] ml-[10px] mt-[9px] tracking-tighter' >
                     modal.cards
                 </div>
             </div>
-            <div className='
-            flex 
-            flex-row
-            decoration-black 
-            not-italic 
-            text-[16px] 
-            leading-[18px] 
-            ml-[82px] 
-            items-center
-            font-medium'>
+            <div className='flex flex-row decoration-black not-italic text-[16px] leading-[18px] ml-[82px] items-center font-medium'>
                 <button className='flex flex-row'>Solution<ExpandIcon /></button>
                 <button className='ml-[53px]'>Product Tour</button>
                 <button className='ml-[30px]'>Showcase</button>
                 <button className='ml-[30px]'>Pricing</button>
             </div>
 
-            <div className='
-            flex 
-            flex-row 
-            items-center
-            decoration-black 
-            not-italic 
-            text-[16px] 
-            leading-[18px]
-            font-medium'>
+            <div className='flex flex-row items-center decoration-black not-italic text-[16px] leading-[18px] font-medium'>
                 <button className='ml-[371px]'>
                     Sign in
                 </button>
-                <button className='
-                text-white
-                bg-[#7D4AEA]
-                w-[121px]
-                h-[36px]
-                ml-[30px]
-                justify-center
-                rounded-xl
-                shadow-[0_3px_7px_11px_rgba(124, 74, 234, 0.2)]'>
+                <button className=' text-white bg-[#7D4AEA] w-[121px] h-[36px] ml-[30px] justify-center rounded-xl shadow-[0_3px_7px_11px_rgba(124, 74, 234, 0.2)]'>
                     Try for free
                 </button>
             </div>
