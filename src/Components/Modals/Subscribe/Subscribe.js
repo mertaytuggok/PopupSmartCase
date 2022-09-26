@@ -12,7 +12,7 @@ export const Subscribe = () => {
             Receive the flash news in your inbox.
             </p>
 
-            <input type="email" placeholder='Enter your email' className=' w-[349px] h-[47px] border-2 rounded-md p-3 ' />
+            <input type="email" placeholder='Enter your email' className='  w-[349px] h-[47px] text-white bg-[#7D4AEA] border-2 rounded-md p-3 ' />
 
             <div className=' flex flex-row justify-items-start    '>
                     <input type="radio" className=' w-[23px] h-[23px] accent-[#7D4AEA] ' />
