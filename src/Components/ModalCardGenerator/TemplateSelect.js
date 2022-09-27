@@ -18,7 +18,7 @@ const TemplateSelect = () => {
 
       <div className='mt-[30px] flex flex-row justify-center'>
         <button className='w-[276px] h-[200px] bg-[#EAEAEA] border-4 rounded-xl mr-[30px] justify-center '>
-          Card
+         Card
         </button>
         <button className=' w-[276px] h-[200px]  bg-[#EAEAEA] border-4 rounded-xl mr-[30px] justify-center '>
           Card

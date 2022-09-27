@@ -1,6 +1,5 @@
 import React from 'react'
 import { CgCloseO } from 'react-icons/cg'
-import { FaPercent } from 'react-icons/fa'
 import { ModalList } from '../../../Assets/ModalList/ModalList'
 
 export const MailList = () => {

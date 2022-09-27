@@ -1,7 +1,5 @@
 import React from 'react'
-import { Securitysvg } from '../../../Assets/Security/Securitysvg'
 import { CgCloseO } from 'react-icons/cg'
-import { Reminders } from '../../../Assets/Reminders/Reminders'
 import { Flag } from '../../../Assets/Flag/Flag'
 import { Next } from '../../../Assets/Next/Next'
 
