@@ -4,19 +4,19 @@ import Uploadsvg from '../../Assets/UploadSvg/Uploadsvg'
 
 const Content = () => {
   return (
-    <div>
+    <div className=' font-inter'>
          <div className=' mt-[90px] flex flex-row '>
           <div className='w-[36px] h-[36px] bg-[#EAEAEA] rounded-full'>
             <p className='mt-[6px] font-semibold text-[16px] text-black text-center justify-center '>
               3
             </p>
           </div>
-          <p className='font-semibold w-[71px] h-[36px] text-[18px] leading-9 not-italic ml-[15px]' >
+          <p className='font-semibold font-poppins w-[71px] h-[36px] text-[18px] leading-9 not-italic ml-[15px]' >
           Content
           </p>
         </div>
 
-        <p className=' w-[114px] h-[18px] font-normal text-[14px] text-black mt-[30px]  '>
+        <p className=' w-[154px] h-[18px] font-normal text-[14px] text-black mt-[30px]  '>
         Edit your content
         </p>
         <div className='grid grid-cols-1 ' >
@@ -45,7 +45,7 @@ const Content = () => {
         <p className=' w-[92px] h-[18px] font-normal text-[14px] text-black mt-[30px]  '>
         Upload image
         </p>
-
+       
         <div className=' mt-[15px] w-[378px] h-[178px] border-dashed border-2 rounded-lg border-[#DDDDDD] '>
           <div className=' ml-[149px] mr-[149px] mt-[30px] w-[80px] h-[80px] bg-[#7D4AEA] opacity-10 ' />
           <button className=' relative  left-[175.5px] bottom-[54.5px]  '>

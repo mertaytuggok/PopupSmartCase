@@ -7,6 +7,7 @@ import Content from '../../Components/ModalCardGenerator/Content'
 import Footer from '../../Components/ModalCardGenerator/Footer'
 import ModalCardGenerator from '../../Components/ModalCardGenerator/ModalCardGenerator'
 import SettingsandCode from '../../Components/ModalCardGenerator/SettingsandCode'
+import { TargetingRules } from '../../Components/ModalCardGenerator/TargetingRules'
 
 const LandingPage = () => {
     return (
@@ -28,6 +29,9 @@ const LandingPage = () => {
                 </div>
                 <div className='w-[100%] pt-[23px] pl-[14.46%] pr-[14.46%]'>
                     <Content/>
+                </div>
+                <div className='w-[100%] pt-[23px] pl-[14.46%] pr-[14.46%]'>
+                    <TargetingRules/>
                 </div>
                 <div className='w-[100%] pt-[23px] pl-[14.46%] pr-[14.46%]'>
                     <SettingsandCode/>

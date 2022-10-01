@@ -1,6 +1,8 @@
 import React from 'react'
 import Uploadsvg from '../../Assets/UploadSvg/Uploadsvg'
 import { BiCloudUpload } from 'react-icons/bi';
+import { CloseSvg } from '../../Assets/CloseSvg/CloseSvg';
+import AppearancaPng from '../../Assets/AppearancePng/Png.png'
 
 const Appearance = () => {
   return (
@@ -12,26 +14,26 @@ const Appearance = () => {
               2
             </p>
           </div>
-          <p className='font-normal    w-[264px] h-[36px] text-[18px] leading-9 not-italic ml-[15px]' >
+          <p className='font-normal  font-poppins   w-[284px] h-[36px] text-[18px] leading-9 not-italic ml-[15px]' >
             <b>Appearance</b> (Size, colors, logo)
           </p>
         </div>
 
 
-        <p className=' w-[28px] h-[18px] font-normal text-[14px] text-black mt-[30px]  '>
+        <p className=' w-[28px] font-inter h-[18px] font-normal text-[14px] text-black mt-[30px]  '>
           Size
         </p>
 
 
-        <div className=' mt-[15px]  flex flex-row  ' >
-          <div className=' w-[257px] h-[48px] bg-[#F5F5F5] rounded-xl space-x-8 justify-center text-center '>
-            <button>Small</button>
+        <div className=' font-inter mt-[15px]  flex flex-row  ' >
+          <div className=' w-[257px] h-[48px] bg-[#F5F5F5] rounded-xl space-x-8  text-center '>
+            <button className='mt-3'>Small</button>
             <button>Medium</button>
             <button>Large</button>
           </div>
         </div>
 
-        <p className=' w-[28px] h-[18px] font-normal text-[14px] text-black mt-[30px]  '>
+        <p className=' font-inter w-[28px] h-[18px] font-normal text-[14px] text-black mt-[30px]  '>
           Position
         </p>
 
@@ -47,7 +49,7 @@ const Appearance = () => {
           <button className='  hover:bg-[#7D4AEA] w-[24px] h-[15px]  bg-[#DDDDDD] rounded-br-md '></button>
         </div>
 
-        <p className=' w-[28px] h-[18px] font-normal text-[14px] text-black mt-[30px]  '>
+        <p className=' font-inter w-[28px] h-[18px] font-normal text-[14px] text-black mt-[30px]  '>
           Colors
         </p>
 
@@ -59,7 +61,7 @@ const Appearance = () => {
           <div className='  w-[42px] h-[42px] rounded-md mr-[10px] border-[#0000004D] border-2 bg-white ' />
         </div>
 
-        <p className=' w-[85px] h-[18px] font-normal text-[14px] text-black mt-[30px]  '>
+        <p className=' font-inter w-[85px] h-[18px] font-normal text-[14px] text-black mt-[30px]  '>
           Upload Logo
         </p>
 
@@ -69,7 +71,7 @@ const Appearance = () => {
             <Uploadsvg />
           </button>
 
-          <p className=' relative left-[72px] bottom-[20px] flex flex-row font-normal text-[14px] text-black  w-[230px] h-[18px] '>
+          <p className=' font-inter relative left-[72px] bottom-[20px] flex flex-row font-normal text-[14px] text-black  w-[230px] h-[18px] '>
             <BiCloudUpload size={25} />
             Drop your image here or
             <button className='ml-[2px] flex flex-row text-[#7D4AEA] font-semibold underline decoration-[#7D4AEA]' >
@@ -82,11 +84,11 @@ const Appearance = () => {
 
 
 
-      <div className=' absolute right-0 top-0  shadow-xl w-[740px] h-[405px] bg-white  rounded-[30px]'>
+      <div className=' font-poppins   absolute right-0 top-0  shadow-xl w-[740px] h-[405px] bg-white  rounded-[30px]'>
        
 
           <div className=' mt-[60px] ml-[135px]'>
-            <p className=' w-[109px] h-[36px] font-semibold text-3xl '>
+            <p className=' w-[129px] h-[36px] font-semibold text-3xl '>
               Sign up
             </p>
           </div>
@@ -114,8 +116,16 @@ const Appearance = () => {
             </p>
           </div>
         </div>
+<div className='absolute top-0 right-0 '>
+  <img className='rounded-r-lg' src={AppearancaPng} width={360} />
+</div>
+        <button className=' absolute top-5 right-5'>
+          <CloseSvg/>
+          </button>
       </div>
+      
 
   )
 }
 export default Appearance
+

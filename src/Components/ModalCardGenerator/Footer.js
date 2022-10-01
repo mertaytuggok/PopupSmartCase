@@ -1,17 +1,65 @@
 import React from 'react'
 import { MdOutlineVerified, MdOutlineGppGood, MdCodeOff, MdGolfCourse } from 'react-icons/md';
 import { BiRefresh, BiPlusCircle, BiMinusCircle } from 'react-icons/bi';
+
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
 import { FaAws } from 'react-icons/fa';
 import { NotePad } from '../../Assets/NotePad/NotePad';
 import { Popupsmart } from '../../Assets/Popupsmart/Popupsmart';
+
+import { styled } from '@mui/material/styles';
+import Switch from '@mui/material/Switch';
 const Footer = () => {
+
+    const AntSwitch = styled(Switch)(({ theme }) => ({
+        width: 28,
+        height: 16,
+        padding: 0,
+        display: 'flex',
+        '&:active': {
+            '& .MuiSwitch-thumb': {
+                width: 15,
+            },
+            '& .MuiSwitch-switchBase.Mui-checked': {
+                transform: 'translateX(9px)',
+            },
+        },
+        '& .MuiSwitch-switchBase': {
+            padding: 2,
+            '&.Mui-checked': {
+                transform: 'translateX(12px)',
+                color: '#fff',
+                '& + .MuiSwitch-track': {
+                    opacity: 1,
+                    backgroundColor: theme.palette.mode === 'dark' ? '#177ddc' : '#7D4AEA',
+                },
+            },
+        },
+        '& .MuiSwitch-thumb': {
+            boxShadow: '0 2px 4px 0 rgb(0 35 11 / 20%)',
+            width: 12,
+            height: 12,
+            borderRadius: 6,
+            transition: theme.transitions.create(['width'], {
+                duration: 200,
+            }),
+        },
+        '& .MuiSwitch-track': {
+            borderRadius: 16 / 2,
+            opacity: 1,
+            backgroundColor:
+                theme.palette.mode === 'dark' ? 'rgba(255,255,255,.35)' : 'rgba(0,0,0,.25)',
+            boxSizing: 'border-box',
+        },
+    }));
     return (
 
-        <div className=' grid justify-items-center  '>
+        <div className=' font-poppins grid justify-items-center  '>
             <div className=' mt-[90px]  '>
 
 
-                <p className=' w-[714px] h-[48px] text-[36px] justify-center ml-[260px]  text-center font-semibold '>
+                <p className=' w-[754px] h-[48px] text-[36px] justify-center ml-[260px]  text-center font-semibold '>
                     Conversion & UX ready popups & modals
                 </p>
 
@@ -60,73 +108,122 @@ const Footer = () => {
 
                 <div className=' grid justify-items-center  '>
                     <div className=' mt-[50px] '>
-                        <div className=' w-[1194px] h-[74px] bg-white  border-t-2 border-b-2 text-left justify-center space-x-[675px]   flex flex-rows-2 gap-4  '>
-                            <p className=' w-[437px] h-[24px] font-semibold text-[18px] text-[#777777] mt-[25px] col-span-3 '>
-                                How do I pay for the essentials or premium plan?
-                            </p>
-                            <div className=' mt-[25px] col-span-1  '><BiPlusCircle size={20} color="#999999" />
-                            </div>
+
+                        <div className=' relative  w-[1194px] bg-white text-[#777777]  border-b-2  text-left space-x-[273px] flex flex-rows-2 gap-4  '>
+                            <details class="open:bg-[#F5F5F5]  open:ring-[#F5F5F5] open: p-6 rounded-lg" open>
+                                <summary class="text-sm leading-6 w-full text-[#000000] dark:text-[#000000] font-semibold select-none">
+                                    How do I pay for the essentials or premium plan?
+                                </summary>
+                                <div class="mt-3 text-sm leading-6 text-[#000000] dark:text-[#000000;]">
+                                    <p className='  h-[78px] w-full font-normal text-[16px]  text-black mt-[20px] mb-[30px]'>
+                                        You can pay with a credit card or via net banking (if you’re in United States). We willrenew your subscription
+                                        automatically at the end of every billing cycle. You can paywith a credit card or via net banking (if you’re
+                                        in United States). We will renew your subscription automatically at the end of every billing cycle.
+                                    </p>
+                                </div>
+
+                            </details>
                         </div>
 
-
-
-                        <div className=' w-[1194px] h-[177px] bg-[#F5F5F5]  border-b-2  text-left justify-center space-x-[273px]   flex flex-rows-2 gap-4  '>
-                            <div className=' flex flex-col '>
-                                <p className=' w-[623px] h-[24px] font-semibold text-[18px] text-black mt-[25px] '>
+                        <div className=' relative  w-[1194px] bg-white text-[#777777]  border-b-2  text-left space-x-[273px] flex flex-rows-2 gap-4  '>
+                            <details class="open:bg-[#F5F5F5]  open:ring-[#F5F5F5] open: p-6 rounded-lg" open>
+                                <summary class="text-sm leading-6 w-full text-[#000000] dark:text-[#000000] font-semibold select-none">
                                     Can I cancel my essentials or premium plan subscription at my time?
-                                </p>
-                                <p className=' w-[839px] h-[78px] font-normal text-[16px]  text-black mt-[20px] mb-[30px]  '>
-                                    You can pay with a credit card or via net banking (if you’re in United States). We willrenew your subscription
-                                    automatically at the end of every billing cycle. You can paywith a credit card or via net banking (if you’re
-                                    in United States). We will renew your subscription automatically at the end of every billing cycle.
-                                </p>
-                            </div>
+                                </summary>
+                                <div class="mt-3 text-sm leading-6 text-[#000000] dark:text-[#000000;]">
+                                    <p className='  h-[78px] w-full font-normal text-[16px]  text-black mt-[20px] mb-[30px]'>
+                                        You can pay with a credit card or via net banking (if you’re in United States). We willrenew your subscription
+                                        automatically at the end of every billing cycle. You can paywith a credit card or via net banking (if you’re
+                                        in United States). We will renew your subscription automatically at the end of every billing cycle.
+                                    </p>
+                                </div>
 
-                            <div className=' mt-[25px] col-span-1  '><BiMinusCircle size={20} color="#7D4AEA" />
-                            </div>
+                            </details>
+                        </div>
+
+                        <div className=' relative  w-[1194px] bg-white text-[#777777]  border-b-2  text-left space-x-[273px] flex flex-rows-2 gap-4  '>
+                            <details class="open:bg-[#F5F5F5]  open:ring-[#F5F5F5] open: p-6 rounded-lg" open>
+                                <summary class="text-sm leading-6 w-full text-[#000000] dark:text-[#000000] font-semibold select-none">
+                                    How do I pay for the essentials or premium plan?
+                                </summary>
+                                <div class="mt-3 text-sm leading-6 text-[#000000] dark:text-[#000000;]">
+                                    <p className='  h-[78px] w-full font-normal text-[16px]  text-black mt-[20px] mb-[30px]'>
+                                        You can pay with a credit card or via net banking (if you’re in United States). We willrenew your subscription
+                                        automatically at the end of every billing cycle. You can paywith a credit card or via net banking (if you’re
+                                        in United States). We will renew your subscription automatically at the end of every billing cycle.
+                                    </p>
+                                </div>
+
+                            </details>
+                        </div>
+
+                        <div className=' relative  w-[1194px] bg-white text-[#777777]  border-b-2  text-left space-x-[273px] flex flex-rows-2 gap-4  '>
+                            <details class="open:bg-[#F5F5F5]  open:ring-[#F5F5F5] open: p-6 rounded-lg" open>
+                                <summary class="text-sm leading-6 w-full text-[#000000] dark:text-[#000000] font-semibold select-none">
+                                    We need to add new users to our team, how will that be billed?
+                                </summary>
+                                <div class="mt-3 text-sm leading-6 text-[#000000] dark:text-[#000000;]">
+                                    <p className='  h-[78px] w-full font-normal text-[16px]  text-black mt-[20px] mb-[30px]'>
+                                        You can pay with a credit card or via net banking (if you’re in United States). We willrenew your subscription
+                                        automatically at the end of every billing cycle. You can paywith a credit card or via net banking (if you’re
+                                        in United States). We will renew your subscription automatically at the end of every billing cycle.
+                                    </p>
+                                </div>
+
+                            </details>
+                        </div>
+
+                        <div className=' relative  w-[1194px] bg-white text-[#777777]  border-b-2  text-left space-x-[273px] flex flex-rows-2 gap-4  '>
+                            <details class="open:bg-[#F5F5F5]  open:ring-[#F5F5F5] open: p-6 rounded-lg" open>
+                                <summary class="text-sm leading-6 w-full text-[#000000] dark:text-[#000000] font-semibold select-none">
+                                    How do I pay for the essentials or premium plan?
+                                </summary>
+                                <div class="mt-3 text-sm leading-6 text-[#000000] dark:text-[#000000;]">
+                                    <p className='  h-[78px] w-full font-normal text-[16px]  text-black mt-[20px] mb-[30px]'>
+                                        You can pay with a credit card or via net banking (if you’re in United States). We willrenew your subscription
+                                        automatically at the end of every billing cycle. You can paywith a credit card or via net banking (if you’re
+                                        in United States). We will renew your subscription automatically at the end of every billing cycle.
+                                    </p>
+                                </div>
+
+                            </details>
+                        </div>
+
+                        <div className=' relative  w-[1194px] bg-white text-[#777777]  border-b-2  text-left space-x-[273px] flex flex-rows-2 gap-4  '>
+                            <details class="open:bg-[#F5F5F5]  open:ring-[#F5F5F5] open: p-6 rounded-lg" open>
+                                <summary class="text-sm leading-6 w-full text-[#000000] dark:text-[#000000] font-semibold select-none">
+                                    Can I cancel my essentials or premium plan subscription at my time?
+                                </summary>
+                                <div class="mt-3 text-sm leading-6 text-[#000000] dark:text-[#000000;]">
+                                    <p className='  h-[78px] w-full font-normal text-[16px]  text-black mt-[20px] mb-[30px]'>
+                                        You can pay with a credit card or via net banking (if you’re in United States). We willrenew your subscription
+                                        automatically at the end of every billing cycle. You can paywith a credit card or via net banking (if you’re
+                                        in United States). We will renew your subscription automatically at the end of every billing cycle.
+                                    </p>
+                                </div>
+
+                            </details>
                         </div>
 
 
-                        <div className=' w-[1194px] h-[74px] bg-white  border-b-2 text-left justify-center space-x-[675px]   flex flex-rows-2 gap-4  '>
-                            <p className=' w-[437px] h-[24px] font-semibold text-[18px] text-[#777777] mt-[25px] col-span-3 '>
-                                How do I pay for the essentials or premium plan?
-                            </p>
-                            <div className=' mt-[25px] col-span-1  '><BiPlusCircle size={20} color="#999999" />
-                            </div>
-                        </div>
 
 
-                        <div className=' w-[1194px] h-[74px] bg-white  border-b-2 text-left justify-center space-x-[554px]   flex flex-rows-2 gap-4  '>
-                            <p className=' w-[558px] h-[24px] font-semibold text-[18px] text-[#777777] mt-[25px] col-span-3 '>
-                                We need to add new users to our team, how will that be billed?
-                            </p>
-                            <div className=' mt-[25px] col-span-1  '><BiPlusCircle size={20} color="#999999" />
-                            </div>
-                        </div>
+ <Stack direction="row" spacing={1} alignItems="center">
 
-                        <div className=' w-[1194px] h-[74px] bg-white  border-b-2 text-left justify-center space-x-[675px]   flex flex-rows-2 gap-4  '>
-                            <p className=' w-[437px] h-[24px] font-semibold text-[18px] text-[#777777] mt-[25px] col-span-3 '>
-                                How do I pay for the essentials or premium plan?
-                            </p>
-                            <div className=' mt-[25px] col-span-1  '><BiPlusCircle size={20} color="#999999" />
-                            </div>
-                        </div>
+<AntSwitch defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
+
+</Stack>
 
 
-                        <div className=' w-[1194px] h-[74px] bg-white  border-b-2 text-left justify-center space-x-[489px]   flex flex-rows-2 gap-4  '>
-                            <p className=' w-[623px] h-[24px] font-semibold text-[18px] text-[#777777] mt-[25px] col-span-3 '>
-                                Can I cancel my essentials or premium plan subscription at my time?
-                            </p>
-                            <div className=' mt-[25px] col-span-1  '><BiPlusCircle size={20} color="#999999" />
-                            </div>
-                        </div>
+
+
 
                     </div>
                 </div>
 
 
                 <div className=' grid justify-items-center  '>
-                    <p className=' w-[563px] h-[48px] text-[36px] justify-center  mt-[120px] text-center font-semibold '>
+                    <p className=' w-[603px] h-[48px] text-[36px] justify-center  mt-[120px] text-center font-semibold '>
                         Build great popups without code
                     </p>
                 </div>
@@ -178,7 +275,7 @@ const Footer = () => {
                             <p className=' w-[84px] h-[24px] font-semibold text-[18px] text-center ml-[25px] '>
                                 No-Code
                             </p>
-                            <p className=' w-[166px] h-[40px] font-normal text-[14px] text-center mt-[10px] '>
+                            <p className=' w-[186px] h-[40px] font-normal text-[14px] text-center mt-[10px] '>
                                 No code required while you’re creating a popup
                             </p>
                         </div>
@@ -204,7 +301,7 @@ const Footer = () => {
 
                 <div className=' mt-[80px]  grid justify-items-center '>
                     <Popupsmart />
-                    <p className=' w-[145px] h-[14px] text-[12px] mt-[15px]  mb-[80px] '>
+                    <p className=' w-[185px] h-[14px] text-[12px] mt-[15px]  mb-[80px] '>
                         Powered by Popupsmart</p>
                 </div>
             </div>

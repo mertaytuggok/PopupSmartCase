@@ -1,10 +1,11 @@
 import React from 'react'
 import { Capmer } from '../../Assets/Camper/Capmer'
+import MainModalPng from '../../Assets/MainModalCardPng/MainModalCardPng.png'
 
 const MainModalCard = () => {
   return (
-    <>
-      <div className=' w-[800px] h-[468px] bg-white mt-[90px] rounded-[40px]'>
+    <div className='static'>
+      <div className=' font-poppins w-[800px] h-[468px] bg-white mt-[90px] rounded-[40px]'>
         <div className=' pt-[55px]'>
 
 
@@ -12,14 +13,12 @@ const MainModalCard = () => {
             <Capmer />
           </div>
 
-          <p className=' mt-[32px] ml-[67px] w-[246px] h-[54px] font-semibold text-[40px] leading-[54px] text-center '>
+          <p className=' mt-[32px] ml-[67px] w-[296px] h-[54px] font-semibold text-[40px] leading-[54px] text-center '>
             Join the club
           </p>
-          <p className='mt-[10px]  w-[267px]  h-[48px]  ml-[57px]  text-[18px]  text-center   font-normal  '>
+          <p className='mt-[10px]  w-[277px]  h-[48px]  ml-[57px]  text-[18px]  text-center   font-normal  '>
             Subscribe and Get an Extra <br />
-            <b className='underline'>25% Off
-            </b>
-            on your first purchase.
+            <b className='underline'>25% Off</b> on your first purchase.
           </p>
           <input
             type='mail'
@@ -35,28 +34,31 @@ const MainModalCard = () => {
             </p>
           </div>
         </div>
-
-
-
+        <div className=' absolute top-8  left-[400px] '> 
+        <img className='rounded-r-2xl' src={MainModalPng} width={450} />
+       
       </div>
+      </div>
+      
+      
       <div>
-        <div className='flex flex-row h-[225px]'>
-          <p className='  flex flex-row w-[80px] h-[80px] font-semibold text-[72px] text-[#FFFFFF] mt-[120px] '>
+        <div className='flex flex-row font-poppins  h-[225px]'>
+          <p className=' leading-[80px]  flex flex-row w-[80px] h-[80px] font-semibold text-[72px] text-[#FFFFFF] mt-[120px] '>
             3x
           </p>
-          <p className=' flex flex-row w-[80px] h-[80px] font-semibold text-[72px] text-[#FFFFFF] mt-[120px] ml-[160px] mr-[120px] '>
+          <p className=' leading-[80px] flex flex-row w-[80px] h-[80px] font-semibold text-[72px] text-[#FFFFFF] mt-[120px] ml-[160px] mr-[120px] '>
             120%
           </p>
-          <p className=' flex flex-row w-[80px] h-[80px] font-semibold text-[72px] text-[#FFFFFF] mt-[120px] ml-[120px] mr-[120px] '>
+          <p className=' leading-[80px] flex flex-row w-[80px] h-[80px] font-semibold text-[72px] text-[#FFFFFF] mt-[120px] ml-[120px] mr-[120px] '>
             390%
           </p>
-          <p className=' flex flex-row w-[344px] h-[132px] font-semibold text-[36px] text-[#FFFFFF] mt-[120px] ml-[195px]'>
+          <p className=' leading-[44px] flex flex-row w-[344px] h-[132px] font-semibold text-[36px] text-[#FFFFFF] mt-[120px] ml-[195px]'>
             Popupsmart meets all your business needs.
           </p>
         </div>
 
 
-        <div className='flex flex-row   '>
+        <div className='flex flex-row leading-[22px]  font-poppins  '>
 
           <p className=' flex  flex-row w-[119px]  h-[44px] font-medium text-[16px] text-[#FFFFFF]
         '>Increase Conversion Rate
@@ -70,7 +72,9 @@ const MainModalCard = () => {
 
         </div>
       </div>
-    </>
+
+     
+    </div>
 
   )
 }

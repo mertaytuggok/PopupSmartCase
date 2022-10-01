@@ -3,14 +3,14 @@ import { IoIosInformationCircleOutline } from 'react-icons/io'
 
 const SettingsandCode = () => {
     return (
-        <div>
+        <div className='font-poppins'>
             <div className=' mt-[90px] flex flex-row '>
                 <div className='w-[36px] h-[36px] bg-[#EAEAEA] rounded-full'>
                     <p className='mt-[6px] font-semibold text-[16px] text-black text-center justify-center '>
                         5
                     </p>
                 </div>
-                <p className='font-semibold w-[160px] h-[36px] text-[18px] leading-9 not-italic ml-[15px]' >
+                <p className='font-semibold w-[180px] h-[36px] text-[18px] leading-9 not-italic ml-[15px]' >
                     Settings and Code
                 </p>
             </div>
@@ -54,9 +54,9 @@ const SettingsandCode = () => {
             </div>
 
             <div className='flex flex-row mt-[15px]'>
-              
-                    <IoIosInformationCircleOutline size={20} />
-                    <p className=' flex flex-row text-[12px] w-[331px] h-[32px] font-normal ml-[7px] '>
+
+                <IoIosInformationCircleOutline size={20} />
+                <p className=' flex flex-row text-[12px] w-[331px] h-[32px] font-normal ml-[7px] '>
                     Copy and paste the embed code above just before the closing  body tag of your website template file.
                 </p>
             </div>
