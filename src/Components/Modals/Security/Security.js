@@ -2,7 +2,7 @@ import React from "react";
 import { Securitysvg } from "../../../Assets/Security/Securitysvg";
 import { CgCloseO } from "react-icons/cg";
 
-export const Security = ({ size, color }) => {
+export const Security = ({ size, color, title, input, button, comment }) => {
   return (
     <div>
       <div
@@ -32,16 +32,16 @@ export const Security = ({ size, color }) => {
           {" "}
           <Securitysvg />{" "}
         </div>
-        <p className=" w-[209px] h-[36px] text-[30px] font-bold  ">
-          Security Code
+        <p className=" w-[209px] h-[36px] text-[30px] text-center font-bold  ">
+          {title ? title : "Security Code"}
         </p>
         <p className=" w-[278px] h-[24px] text-[20px] font-normal  ">
-          This code expires in 24 hours
+          {comment ? comment : "  This code expires in 24 hours"}
         </p>
 
         <input
           type="text"
-          placeholder="Code"
+          placeholder={`${input ? input : "Code"}`}
           className=" w-[349px] h-[47px] border-2 rounded-md p-3 "
         />
         <div className=" flex flex-row ">
@@ -59,9 +59,9 @@ export const Security = ({ size, color }) => {
                 : color === "White"
                 ? " bg-[#DDDDDD]"
                 : "bg-white , text-black"
-            }  ml-[15px] text-white font-medium w-[168px] h-[48px] text-[16px] border-2 rounded-md `}
+            }  ml-[15px] text-white font-medium text-center w-[168px] h-[48px] text-[16px] border-2 rounded-md `}
           >
-            Continue
+            {button ? button : "Continue"}
           </button>
         </div>
 

@@ -1,8 +1,10 @@
 import React from "react";
 import { BiCloudUpload } from "react-icons/bi";
 import AppearancaPng from "../../Assets/AppearancePng/Png.png";
+import { useModal } from "../../Context/ModalContext/ModalContext";
 
 const Content = () => {
+  const { setTitle, setInput, setButton, setComment } = useModal();
   return (
     <div className="pl-[14.4%] font-inter">
       <div className=" mt-[90px] flex flex-row ">
@@ -22,22 +24,26 @@ const Content = () => {
       <div className="grid grid-cols-1 ">
         <input
           type="name"
-          placeholder="Sign Up "
+          onChange={(e) => setTitle(e.target.value)}
+          placeholder="Title "
           className=" w-[378px] focus:border-[#7D4AEA]  hover:border-[#7D4AEA]  h-[36px]  mt-[15px]  p-4  rounded-[12px]  border-2  border-gray  bg-[#FFFFFF] "
         />
         <input
           type="mail"
-          placeholder="Enter your email "
+          placeholder="Comment"
+          onChange={(e) => setComment(e.target.value)}
           className=" w-[378px]  h-[36px]  mt-[15px] hover:border-[#7D4AEA]   p-4  rounded-[12px]  border-2  border-gray  bg-[#FFFFFF] "
         />
         <input
           type="name"
-          placeholder="Sign Up "
+          placeholder="Input "
+          onChange={(e) => setInput(e.target.value)}
           className=" w-[378px]  h-[36px]  mt-[15px] hover:border-[#7D4AEA] p-4  rounded-[12px]  border-2  border-gray  bg-[#FFFFFF] "
         />
         <input
           type="mail"
-          placeholder="By singning up, you agree to Privacy Policy "
+          placeholder="Button "
+          onChange={(e) => setButton(e.target.value)}
           className=" w-[378px]  h-[36px]  mt-[15px] hover:border-[#7D4AEA]   p-4  rounded-[12px]  border-2  border-gray  bg-[#FFFFFF] "
         />
       </div>

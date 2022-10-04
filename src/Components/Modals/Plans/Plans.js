@@ -1,7 +1,7 @@
 import React from "react";
 import { CgCloseO } from "react-icons/cg";
 
-export const Plans = ({size, color}) => {
+export const Plans = ({ size, color, title, input, button, comment }) => {
   return (
     <div
       className={` ${
@@ -14,7 +14,8 @@ export const Plans = ({size, color}) => {
           : "w-[480px]  h-[486px] "
       } relative  bg-white   grid justify-items-center rounded-md `}
     >
-      <p className=  {` ${
+      <p
+        className={` ${
           color === "Black"
             ? "text-black bg-white"
             : color === "Orange"
@@ -24,15 +25,16 @@ export const Plans = ({size, color}) => {
             : color === "White"
             ? " text-[#DDDDDD]"
             : "text-white bg-black"
-        }  w-[60px] h-[22px] text-center rounded-full mt-[49px] `}  >
+        }  w-[60px] h-[22px] text-center rounded-full mt-[49px] `}
+      >
         {" "}
-        PLANS{" "}
+        {title ? title : "PLANS"}{" "}
       </p>
-      <p className=" w-[295px] h-[36px] text-[30px] font-bold  mt-[14px] ">
-        Choose best for you
+      <p className=" w-[295px] h-[36px] text-center text-[30px] font-bold  mt-[14px] ">
+        {comment ? comment : " Choose best for you "}
       </p>
-      <p className=" w-[366px] h-[24px] text-[20px] mt-[15px] font-normal  ">
-        Only pay for the capacity that you use.
+      <p className=" w-[366px] h-[24px] text-[20px] text-center mt-[15px] font-normal  ">
+        {input ? input : "Only pay for the capacity that you use."}
       </p>
 
       <div className=" grid justify-items-start mt-12">
@@ -48,8 +50,8 @@ export const Plans = ({size, color}) => {
                 ? " accent-[#777777]"
                 : color === "White"
                 ? " accent-[#DDDDDD]"
-                :  "accent-[#7D4AEA]"
-            } w-[23px] h-[23px]`}  
+                : "accent-[#7D4AEA]"
+            } w-[23px] h-[23px]`}
           />
           <label className=" w-[61px] h-[22px] text-[18px] font-medium ml-[11px]  ">
             Starter
@@ -62,7 +64,7 @@ export const Plans = ({size, color}) => {
         <div className=" flex flex-row justify-items-start    ">
           <input
             type="radio"
-            className= {`${
+            className={`${
               color === "Black"
                 ? "accent-black text-white"
                 : color === "Orange"
@@ -71,8 +73,8 @@ export const Plans = ({size, color}) => {
                 ? " accent-[#777777]"
                 : color === "White"
                 ? " accent-[#DDDDDD]"
-                :  "accent-[#7D4AEA]"
-            } w-[23px] h-[23px] checked:border-[6px] `} 
+                : "accent-[#7D4AEA]"
+            } w-[23px] h-[23px] checked:border-[6px] `}
             value="Pro"
           />
           <label className=" w-[61px] h-[22px] text-[18px] font-medium ml-[11px] ">
@@ -95,8 +97,8 @@ export const Plans = ({size, color}) => {
                 ? " accent-[#777777]"
                 : color === "White"
                 ? " accent-[#DDDDDD]"
-                :  "accent-[#7D4AEA]"
-            } w-[23px] h-[23px]`}  
+                : "accent-[#7D4AEA]"
+            } w-[23px] h-[23px]`}
           />
           <label className=" w-[61px] h-[22px] text-[18px] font-medium ml-[11px] ">
             Business
@@ -111,18 +113,20 @@ export const Plans = ({size, color}) => {
         <button className=" w-[168px] h-[48px] text-[16px] font-medium border-2 rounded-md ">
           Cancel
         </button>
-        <button className={`${
-          color === "Black"
-            ? "bg-black text-white"
-            : color === "Orange"
-            ? "bg-[#F37C34]"
-            : color === "Gray"
-            ? " bg-[#777777]"
-            : color === "White"
-            ? " bg-[#DDDDDD]"
-            : "bg-white text-black"
-        } ml-[15px] text-white font-medium w-[168px] h-[48px] text-[16px] border-2 rounded-md  bg-[#7D4AEA]  `} >
-          Continue
+        <button
+          className={`${
+            color === "Black"
+              ? "bg-black text-white"
+              : color === "Orange"
+              ? "bg-[#F37C34]"
+              : color === "Gray"
+              ? " bg-[#777777]"
+              : color === "White"
+              ? " bg-[#DDDDDD]"
+              : "bg-white text-black"
+          } ml-[15px] text-white font-medium w-[168px] h-[48px] text-[16px] border-2 rounded-md  bg-[#7D4AEA]  `}
+        >
+          {button ? button : "Continue"}
         </button>
       </div>
 

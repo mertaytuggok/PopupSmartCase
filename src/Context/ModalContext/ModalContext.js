@@ -7,6 +7,10 @@ const Provider = ({ children }) => {
   const [size, setSize] = useState("");
   const [color, setColor] = useState("");
   const [position, setPosition] = useState();
+  const [title, setTitle] = useState();
+  const [input, setInput] = useState();
+  const [button, setButton] = useState();
+  const [comment, setComment] = useState();
 
   const data = {
     modalName,
@@ -16,7 +20,15 @@ const Provider = ({ children }) => {
     color,
     setColor,
     position,
-    setPosition
+    setPosition,
+    title,
+    setTitle,
+    input,
+    setInput,
+    button,
+    setButton,
+    comment,
+    setComment,
   };
 
   return <Context.Provider value={data}>{children}</Context.Provider>;

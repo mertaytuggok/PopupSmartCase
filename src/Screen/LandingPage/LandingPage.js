@@ -23,7 +23,8 @@ import { Hello } from "../../Components/Modals/Hello/Hello";
 import { useModal } from "../../Context/ModalContext/ModalContext";
 
 const LandingPage = () => {
-  const { modalName, setModalName, size, color, position } = useModal();
+  const { modalName, title, size, color, position, input, button, comment } =
+    useModal();
 
   return (
     <div className=" relative   sm:space-x-2 sm:w-[350px] lg:space-x-8 lg:w-[1000px]  mt-[23px] w-[100%] ">
@@ -65,18 +66,119 @@ const LandingPage = () => {
             {" "}
             {
               {
-                SecurityModal: <Security size={size} color={color} />,
-                CheckMailModal: <CheckMailModal size={size} color={color} />,
-                DeleteModal: <Delete size={size} color={color} />,
-                Feedback: <Feedback size={size} color={color} />,
-                File: <FileWay size={size} color={color} />,
-                Found: <Found size={size} color={color} />,
-                HeyThere: <HeyThereModal size={size} color={color} />,
-                MailList: <MailList size={size} color={color} />,
-                MissOut: <MissOut size={size} color={color} />,
-                Plans: <Plans size={size} color={color} />, 
-                Reminders: <RemindersModal size={size} color={color} />,
-                Stranger: <Hello size={size} color={color} />,
+                SecurityModal: (
+                  <Security
+                    size={size}
+                    color={color}
+                    title={title}
+                    input={input}
+                    button={button}
+                    comment={comment}
+                  />
+                ),
+                CheckMailModal: (
+                  <CheckMailModal
+                    size={size}
+                    color={color}
+                    title={title}
+                    input={input}
+                    button={button}
+                    comment={comment}
+                  />
+                ),
+                DeleteModal: (
+                  <Delete
+                    size={size}
+                    color={color}
+                    title={title}
+                    input={input}
+                    button={button}
+                    comment={comment}
+                  />
+                ),
+                Feedback: (
+                  <Feedback
+                    size={size}
+                    color={color}
+                    title={title}
+                    input={input}
+                    comment={comment}
+                  />
+                ),
+                File: (
+                  <FileWay
+                    size={size}
+                    color={color}
+                    title={title}
+                    button={button}
+                    comment={comment}
+                  />
+                ),
+                Found: (
+                  <Found
+                    size={size}
+                    color={color}
+                    title={title}
+                    button={button}
+                    comment={comment}
+                  />
+                ),
+                HeyThere: (
+                  <HeyThereModal
+                    size={size}
+                    color={color}
+                    title={title}
+                    button={button}
+                    comment={comment}
+                  />
+                ),
+                MailList: (
+                  <MailList
+                    size={size}
+                    color={color}
+                    title={title}
+                    input={input}
+                    button={button}
+                    comment={comment}
+                  />
+                ),
+                MissOut: (
+                  <MissOut
+                    size={size}
+                    title={title}
+                    comment={comment}
+                  />
+                ),
+                Plans: (
+                  <Plans
+                    size={size}
+                    color={color}
+                    title={title}
+                    input={input}
+                    button={button}
+                    comment={comment}
+                  />
+                ),
+                Reminders: (
+                  <RemindersModal
+                    size={size}
+                    color={color}
+                    title={title}
+                    input={input}
+                    button={button}
+                    comment={comment}
+                  />
+                ),
+                Stranger: (
+                  <Hello
+                    size={size}
+                    color={color}
+                    title={title}
+                    input={input}
+                    button={button}
+                    comment={comment}
+                  />
+                ),
               }[modalName]
             }
           </div>

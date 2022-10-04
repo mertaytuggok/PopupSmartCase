@@ -1,24 +1,27 @@
 import React from "react";
 import { CgCloseO } from "react-icons/cg";
 
-export const Feedback = ({ size, color }) => {
+export const Feedback = ({ size, color, title, comment }) => {
   return (
     <div
       className={`${
         size === "Small"
-          ? "w-[380px]  h-[226px]"
+          ? "w-[380px]  h-[256px]"
           : size === "Medium"
-          ? "w-[480px]  h-[226px]"
+          ? "w-[480px]  h-[256px]"
           : "Large"
-          ? " w-[580px] h-[326px]"
-          : "w-[480px]  h-[226px]"
+          ? " w-[580px] h-[356px]"
+          : "w-[480px]  h-[256px]"
       }  relative bg-white   grid justify-items-center rounded-md `}
     >
-      <p className=" w-[214px] h-[36px] text-[30px] mt-[59px] font-bold text-dark  ">
-        Let’s feedback
+      <p className=" w-[214px] h-[36px] text-center text-[30px] mt-[59px] font-bold text-dark  ">
+        {title ? title : " Let’s feedback"}
+      </p>
+      <p className=" w-[306px] h-[48px] text-[20px] font-normal text-center  ">
+        {comment ? comment : ""}
       </p>
 
-      <div className=" flex cursor-pointer flex-row ">
+      <div className=" flex cursor-pointer mb-6 flex-row ">
         <button
           className={`  ${
             color === "Black"
