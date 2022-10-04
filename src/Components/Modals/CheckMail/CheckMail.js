@@ -7,13 +7,13 @@ export const CheckMailModal = ({ size, color }) => {
     <div
       className={`relative ${
         size === "Small"
-          ? "w-[380px]"
+          ? "w-[380px]  h-[584x]"
           : size === "Medium"
-          ? "w-[480px]"
+          ? "w-[480px]  h-[584x]"
           : "Large"
-          ? " w-[580px]"
-          : "w-[480px] "
-      }  bg-white  w-[480px] h-[5864x]  grid justify-items-center rounded-md `}
+          ? " w-[580px] h-[684x]"
+          : "w-[480px]  h-[584x]  "
+      }  bg-white   grid justify-items-center rounded-md `}
     >
       <div className="   mt-[50px] ">
         {" "}

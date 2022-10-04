@@ -6,17 +6,17 @@ export const Plans = ({size, color}) => {
     <div
       className={` ${
         size === "Small"
-          ? "w-[380px]"
+          ? "w-[380px]  h-[486px]"
           : size === "Medium"
-          ? "w-[480px]"
+          ? "w-[480px]  h-[486px]"
           : "Large"
           ? " w-[580px]  h-[586px]"
-          : "w-[480px] "
-      } relative  bg-white  h-[486px]  grid justify-items-center rounded-md `}
+          : "w-[480px]  h-[486px] "
+      } relative  bg-white   grid justify-items-center rounded-md `}
     >
       <p className=  {` ${
           color === "Black"
-            ? "text-black text-white"
+            ? "text-black bg-white"
             : color === "Orange"
             ? "text-[#F37C34]"
             : color === "Gray"

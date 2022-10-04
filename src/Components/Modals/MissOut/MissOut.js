@@ -7,13 +7,13 @@ export const MissOut = ({size}) => {
   return (
     <div className=  {`${
       size === "Small"
-        ? "w-[380px]"
+        ? "w-[380px] h-[360px]"
         : size === "Medium"
-        ? "w-[480px]"
+        ? "w-[480px] h-[360px]"
         : "Large"
         ? " w-[580px] h-[460px]"
-        : "w-[480px] "
-    } relative  bg-white   h-[360px]  grid justify-items-center rounded-md`}   >
+        : "w-[480px] h-[360px]"
+    } relative  bg-white     grid justify-items-center rounded-md`}   >
       <div className=" mt-[60px] ">
         <Flag />
       </div>

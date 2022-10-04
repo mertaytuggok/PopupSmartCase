@@ -7,13 +7,13 @@ export const Delete = ({ size, color }) => {
     <div
       className={` ${
         size === "Small"
-          ? "w-[380px]"
+          ? "w-[380px]  h-[516px] "
           : size === "Medium"
-          ? "w-[480px]"
+          ? "w-[480px]  h-[516px] "
           : "Large"
-          ? " w-[580px]"
-          : "w-[480px] "
-      } relative bg-white  h-[516px]  grid justify-items-center rounded-md  `}
+          ? " w-[580px] h-[616px]"
+          : "w-[480px]  h-[516px] "
+      } relative bg-white  grid justify-items-center rounded-md  `}
     >
       <div className= {`  ${
             color === "Black"

@@ -6,12 +6,12 @@ export const Hello = ({ size, color }) => {
     <div
       className={`${
         size === "Small"
-          ? "w-[380px]"
+          ? "w-[380px]  h-[283px]"
           : size === "Medium"
-          ? "w-[480px]"
+          ? "w-[480px]  h-[283px]"
           : "Large"
-          ? " w-[580px] h-[360px]"
-          : "w-[480px] "
+          ? " w-[580px] h-[380px]"
+          : "w-[480px]  h-[283px]"
       } ${
         color === "Black"
           ? "bg-black text-white"
@@ -22,7 +22,7 @@ export const Hello = ({ size, color }) => {
           : color === "White"
           ? " bg-[#DDDDDD]"
           : " bg-[#7D4AEA] text-black"
-      } relative    h-[283px]  grid justify-items-center rounded-md `}
+      } relative     grid justify-items-center rounded-md `}
     >
       <p className=" w-[172px] h-[36px] text-[30px] mt-[59px] font-bold text-white  ">
         Hi, stranger

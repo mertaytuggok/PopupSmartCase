@@ -8,13 +8,13 @@ export const Security = ({ size, color }) => {
       <div
         className={`relative ${
           size === "Small"
-            ? "w-[380px]"
+            ? "w-[380px] h-[446px]"
             : size === "Medium"
-            ? "w-[480px]"
+            ? "w-[480px] h-[446px]"
             : "Large"
-            ? " w-[580px]"
-            : "w-[480px] "
-        }  h-[446px] bg-white grid justify-items-center rounded-md `}
+            ? " w-[580px] h-[546px]"
+            : "w-[480px] h-[446px] "
+        }   bg-white grid justify-items-center rounded-md `}
       >
         <div
           className={` ${

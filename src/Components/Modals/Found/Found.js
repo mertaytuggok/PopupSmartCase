@@ -7,13 +7,13 @@ export const Found = ({ size, color }) => {
     <div
       className={`${
         size === "Small"
-          ? "w-[380px]"
+          ? "w-[380px]  h-[508px] "
           : size === "Medium"
-          ? "w-[480px]"
+          ? "w-[480px]  h-[508px] "
           : "Large"
           ? " w-[580px] h-[608px]"
-          : "w-[480px] "
-      }  relative  bg-white  h-[508px]  grid justify-items-center rounded-md`}
+          : "w-[480px]  h-[508px]  "
+      }  relative  bg-white  grid justify-items-center rounded-md`}
     >
       <div className=" mt-[56.25px] ">
         <Robot />

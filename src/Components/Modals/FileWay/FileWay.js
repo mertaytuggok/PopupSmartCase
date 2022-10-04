@@ -5,13 +5,13 @@ export const FileWay = ({size, color}) => {
   return (
     <div className={`${
       size === "Small"
-        ? "w-[380px]"
+        ? "w-[380px] h-[283px]"
         : size === "Medium"
-        ? "w-[480px]  "
+        ? "w-[480px] h-[283px] "
         : size === "Large"
-        ? " w-[580px] h-[383px] "
-        : "w-[480px] "
-    } relative bg-white  h-[283px]  grid justify-items-center rounded-md  `}>
+        ? " w-[580px] h-[430px] "
+        : "w-[480px] h-[283px] "
+    } relative bg-white    grid justify-items-center rounded-md  `}>
       <p className=" w-[303px] h-[36px] text-[30px] mt-[50px] font-bold  ">
         The file is on it's way
       </p>

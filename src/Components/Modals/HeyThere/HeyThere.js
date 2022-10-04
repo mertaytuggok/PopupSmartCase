@@ -6,13 +6,13 @@ export const HeyThereModal = ({ size, color }) => {
   return (
     <div className= {`${
       size === "Small"
-        ? "w-[380px]"
+        ? "w-[380px] h-[471px]"
         : size === "Medium"
-        ? "w-[480px]"
+        ? "w-[480px] h-[471px]"
         : "Large"
         ? " w-[580px]  h-[571px]"
-        : "w-[480px] "
-    } relative  bg-white  h-[471px]  grid justify-items-center rounded-md`}>
+        : "w-[480px] h-[471px]"
+    } relative  bg-white    grid justify-items-center rounded-md`}>
       <div className="mt-[50px]">
         {" "}
         <HeyThere />{" "}
