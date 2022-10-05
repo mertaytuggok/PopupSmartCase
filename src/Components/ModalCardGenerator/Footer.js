@@ -59,7 +59,6 @@ const Footer = () => {
         <p className=" w-[714px] h-[48px] text-[36px] justify-center ml-[20%] mt-[120px]  text-center font-semibold ">
           Frequently Asked Questions
         </p>
-
         <div className=" grid justify-items-center  ">
           <div className=" mt-[50px] ">
             <div className=" relative  w-[1194px] bg-white text-[#777777]  border-b-2  text-left space-x-[273px] flex flex-rows-2 gap-4  ">

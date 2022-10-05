@@ -38,8 +38,10 @@ export const HeyThereModal = ({ size, color, button, title, comment }) => {
             ? " bg-[#777777]"
             : color === "White"
             ? " bg-[#DDDDDD]"
-            : "bg-white text-black"
-        }  bg-[#7D4AEA] mt-[33px] text-white font-medium w-[350px] h-[48px] text-[16px] border-2 rounded-lg`}
+            : color === "Default"
+            ? "bg-white text-black"
+            : "bg-[#7D4AEA]"
+        }   mt-[33px] text-white font-medium w-[350px] h-[48px] text-[16px] border-2 rounded-lg`}
       >
         {button ? button : "Sign up"}
       </button>

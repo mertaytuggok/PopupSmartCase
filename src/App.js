@@ -4,7 +4,7 @@ import ModalProvider from "./Context/ModalContext/ModalContext";
 
 function App() {
   return (
-    <ModalProvider >
+    <ModalProvider>
       <LandingPage />
     </ModalProvider>
   );

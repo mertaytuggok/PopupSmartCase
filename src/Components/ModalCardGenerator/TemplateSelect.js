@@ -33,7 +33,7 @@ const TemplateSelect = () => {
         <button
           onClick={() => setModalName("SecurityModal")}
           className=" relative hover:bg-violet-400 w-[276px] h-[200px] bg-[#EAEAEA] border-4 rounded-xl mr-[30px]  "
-        >
+        > 
           <div className="absolute  top-4 left-12 ">
             <img src={SecurityModal} width={170} />
           </div>

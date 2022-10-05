@@ -66,7 +66,7 @@ export const RemindersModal = ({
       >
         {button ? button : "Weekly"}
       </button>
-      <p className=" w-[108px] h-[19px]  mt-[28.5px] text-[16px] font-medium ">
+      <p className=" w-[108px] h-[19px]  mb-[28.5px] text-[16px] font-medium ">
         No Reminders
       </p>
 

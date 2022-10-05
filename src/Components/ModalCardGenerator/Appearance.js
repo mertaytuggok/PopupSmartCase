@@ -88,7 +88,7 @@ const Appearance = () => {
           />
           <button
             onClick={() => setColor("Orange")}
-            className="  w-[42px] h-[42px] rounded-md mr-[10px] border-[#0000004D] border-4 bg-[#F37C34]  focus:border-slate-400    hover:border-slate-400  "
+            className="  w-[42px] h-[42px] rounded-md mr-[10px] border-[#F37C34] border-4 bg-[#F37C34]  focus:border-slate-400    hover:border-slate-400  "
           />
           <button
             onClick={() => setColor("Gray")}
@@ -114,7 +114,7 @@ const Appearance = () => {
             <Uploadsvg />
           </button>
 
-          <p className=" font-inter relative left-[60px] bottom-[20px] font-normal flex flex-row font-normal text-[14px] text-black  w-[250px] h-[18px] ">
+          <p className=" font-inter relative left-[60px] bottom-[20px] font-normal flex flex-row text-[14px] text-black  w-[250px] h-[18px] ">
             <BiCloudUpload size={25} />
             Drop your image here or
             <button className="ml-[2px] flex flex-row text-[#7D4AEA] font-semibold underline decoration-[#7D4AEA]">

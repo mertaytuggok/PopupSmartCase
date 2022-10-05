@@ -21,7 +21,7 @@ export const Found = ({ size, color, button, title, comment }) => {
       <p className=" w-[79px] h-[36px] mt-[35px] text-[30px] text-center  font-bold  ">
         {title ? title : "Opps"}
       </p>
-      <p className=" w-[145px] h-[48px] text-[20px] mt-[20px] text-center font-normal  ">
+      <p className=" w-[145px] h-[48px] text-[20px] mt-[10px] text-center font-normal  ">
         {comment ? comment : "Page not found"}
       </p>
 
@@ -36,7 +36,7 @@ export const Found = ({ size, color, button, title, comment }) => {
             : color === "White"
             ? " bg-[#DDDDDD]"
             : "bg-white text-black"
-        }  font-medium mt-[31px] w-[349px] text-center h-[47px] text-[16px] border-2 rounded-md `}
+        }  font-medium mb-[20px]  w-[349px] text-center h-[47px] text-[16px] border-2 rounded-md `}
       >
         {button ? button : "Back to home"}
       </button>

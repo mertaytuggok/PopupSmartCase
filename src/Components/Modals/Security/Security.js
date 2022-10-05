@@ -35,7 +35,7 @@ export const Security = ({ size, color, title, input, button, comment }) => {
         <p className=" w-[209px] h-[36px] text-[30px] text-center font-bold  ">
           {title ? title : "Security Code"}
         </p>
-        <p className=" w-[278px] h-[24px] text-[20px] font-normal  ">
+        <p className=" w-[278px] h-[24px] text-[20px] text-center font-normal  ">
           {comment ? comment : "  This code expires in 24 hours"}
         </p>
 

@@ -14,7 +14,7 @@ export const CheckMailModal = ({
     <div
       className={`relative ${
         size === "Small"
-          ? "w-[380px]  h-[584x]"
+          ? "w-[380px]  h-[684x]"
           : size === "Medium"
           ? "w-[480px]  h-[584x]"
           : "Large"
@@ -56,7 +56,7 @@ export const CheckMailModal = ({
         {button ? button : "Sign up "}
       </button>
 
-      <p className=" w-[171px] h-[17px] mt-[20px] text-[14px] ">
+      <p className=" w-[171px] h-[17px] mt-[20px] mb-[20px] text-[14px] ">
         Already
         <b className=" font-normal underline underline-offset-2 ">
           {" "}
